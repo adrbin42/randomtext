@@ -1,18 +1,11 @@
 const express = require('express');
 const app = express();
 let loremIpsum = require('lorem-ipsum');
-let output = loremIpsum({count:3,units:'paragraphs',format:'html'});
 
-app.get('/lorem', function(req, res){
-  res.send(output);
+app.get('/lorem/:count', function(req, res){
+  res.send(loremIpsum({count:req.params.count,units:'paragraphs',format:'html'}));
 });
 
 app.listen(3000, function(){
   console.log('Everything is great!');
 });
-
-
-
-// , paragraphLowerBound: 3         Minimum sentences per paragraph.
-//   , paragraphUpperBound: 7        Maximum sentences per paragraph.
-// , format: 'plain'
