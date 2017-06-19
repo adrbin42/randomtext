@@ -1,0 +1,27 @@
+{
+  "name": "randomtext",
+  "version": "1.0.0",
+  "description": "Generate random text assess 1 day 1 of week 5",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrbin42/randomtext.git"
+  },
+  "keywords": [
+    "random",
+    "text",
+    "randomtext"
+  ],
+  "author": "Adrienne Bing",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrbin42/randomtext/issues"
+  },
+  "homepage": "https://github.com/adrbin42/randomtext#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
